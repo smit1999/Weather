@@ -57,14 +57,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container">
 
     <div class="city">
-        Stockholm, Sweden.
+        {{data.city}}
     </div>
 
     <div class="content">
-        
+
+        <p></p>
         <div class="place">
 
-            <div id="txt"></div>
+            <div id="txt"><p></p> </div>
 
             <div class="dmy">
                 <script type="text/javascript">
@@ -81,12 +82,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
                      document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
                 </script>
+                <i id="des"><b>{{data.desc}}</b></i>
             </div>
 
         </div>
 
+
         <div class="temp">
-            <p>10° C</p>
+           <p> {{data.temperature}}°F </p>
         </div>
 
         <div class="clear"></div>
